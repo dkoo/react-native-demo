@@ -1,3 +1,9 @@
+/**
+ * Footer component. Presentational.
+ *
+ * @return <Footer />
+ */
+
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 

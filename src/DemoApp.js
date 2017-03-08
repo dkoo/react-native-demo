@@ -14,10 +14,19 @@ import reducers from './reducers';
 
 export default class DemoApp extends Component {
 	render() {
-		const store = createStore( reducers, {}, applyMiddleware( ReduxThunk ) );
-
 		return (
-			<Provider store={ store }>
+			/**
+			*
+			* The empty object passed to `createStore` is the default state for Redux.
+			*
+			* If initializing the store with a default state, it must have the
+			* same keys as the `reducers` object returned from `combineReducers`
+			* in the src/reducers/index.js file.
+			*
+			* More info: https://github.com/reactjs/redux/blob/master/docs/api/createStore.md
+			*
+			*/
+			<Provider store={ createStore( reducers, {}, applyMiddleware( ReduxThunk ) ) }>
 				<Container />
 			</Provider>
 		);

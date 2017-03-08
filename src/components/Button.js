@@ -1,5 +1,11 @@
+/**
+ * Button component. Presentational.
+ *
+ * @return <Button />
+ */
+
 import React from 'react';
-import { LayoutAnimation, TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 export const Button = ( { onPress, scale = 1, children } ) => {
 	return (

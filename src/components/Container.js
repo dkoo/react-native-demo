@@ -1,3 +1,9 @@
+/**
+ * Container component.
+ *
+ * @return <Container />
+ */
+
 // Import library dependencies
 import React, { Component } from 'react';
 import { LayoutAnimation, View, Text, StyleSheet } from 'react-native';
